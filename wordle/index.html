@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bgClr: "#dee4e9",
+              primaryClr: "#00243c",
+              secondaryClr: "#23405a",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Pacifico&display=swap");
+
+      body {
+        font-family: "Dosis", sans-serif;
+      }
+
+      .side-left {
+        background-image: url("./bg1.jpg");
+        font-family: "Pacifico", cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container bg-bgClr flex flex-row min-h-screen">
+      <!-- left -->
+      <div
+        class="side-left basis-1/3 bg-cover bg-no-repeat relative grid place-content-center"
+      >
+        <!-- wave -->
+        <img
+          src="wave.png"
+          alt="wave"
+          class="h-full absolute right-0 top-0 translate-x-1/3"
+        />
+        <!-- text -->
+        <div class="text-primaryClr text-8xl font-bold">
+          <p>Wordle</p>
+          <p>Game</p>
+        </div>
+      </div>
+
+      <!-- right -->
+      <div
+        class="side-right basis-2/3 flex flex-col justify-center items-center gap-y-5"
+      >
+        <h3 class="text-2xl">What's the word of the day ?</h3>
+
+        <!-- board -->
+        <div
+          class="board grid grid-cols-5 gap-x-1 gap-y-3 place-content-center"
+        >
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-0"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-1"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-2"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-3"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-4"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-5"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-6"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-7"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-8"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-9"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-10"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-11"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-12"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-13"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-14"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-15"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-16"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-17"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-18"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-19"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-20"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-21"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-22"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-23"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-24"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-25"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-26"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-27"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-28"
+          ></div>
+          <div
+            class="w-14 h-14 border-4 rounded-xl border-secondaryClr grid place-content-center text-4xl text-primaryClr bold"
+            id="letter-29"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="index.js"></script>
+  </body>
+</html>
+<!-- Colors -->
+<!-- 
+    bgcolor: #dee4e9;
+    primaryColor: #00243c;
+    secondaryColor: #23405a;
+-->
