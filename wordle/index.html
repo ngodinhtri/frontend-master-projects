@@ -45,6 +45,22 @@
         background-color: #7e7474;
         color: #dee4e9;
       }
+
+      .board .invalid {
+        animation: flash infinite 1.5s ease-in-out;
+      }
+
+      @keyframes flash {
+        0% {
+          border-color: #23405a;
+        }
+        50% {
+          border-color: #ea5455;
+        }
+        100% {
+          border-color: #23405a;
+        }
+      }
     </style>
   </head>
   <body>
