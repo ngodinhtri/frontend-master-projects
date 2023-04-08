@@ -5,20 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mỹ Linh - Phần mềm kế toán MISA</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.misacdn.net/wp-content/uploads/2021/03/favicon.ico"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="intro">
-      <p class="name">Xin chào, tôi là <span>Mỹ Linh</span></p>
-      <h2>
-        Bạn đang tìm kiếm một giải pháp <br />
-        cho các vấn đề kế toán của doanh nghiệp ?
-      </h2>
-      <p>
-        Phần mềm kế toán <a href="https://www.misa.vn/">MISA</a>, một giải pháp
-        toàn diện cho các doanh nghiệp vừa và nhỏ.
-      </p>
-    </section>
+    <div class="container">
+      <section id="intro">
+        <p class="name">Xin chào, tôi là <span>Mỹ Linh</span></p>
+        <h2>
+          Bạn đang tìm kiếm một giải pháp <br />
+          cho các vấn đề kế toán của doanh nghiệp ?
+        </h2>
+        <p>
+          Phần mềm kế toán <a href="https://www.misa.vn/">MISA</a>, một giải
+          pháp toàn diện cho các doanh nghiệp vừa và nhỏ.
+        </p>
+      </section>
+
+      <section id="contact">
+        <div class="info">
+          <h3 class="title">Hỗ trợ tư vấn & giải đáp</h3>
+          <address>
+            <p>
+              Email:
+              <a href="mailto:mylinhstkt123@gmail.com"
+                >mylinhstkt123@gmail.com</a
+              >
+            </p>
+            <p>
+              Phone:
+              <a href="tel:+84392812391">0392812391</a>
+            </p>
+            <p>
+              Hoặc truy cập link bằng điện thoại, Zalo:
+              <a href="https://zaloapp.com/qr/p/1kydg4y1za5px"
+                >Mỹ Linh - MISA</a
+              >
+            </p>
+            <img class="zalo_qr" src="./images/zalo_qr.jpg" alt="Zalo QR" />
+          </address>
+        </div>
+        <div class="form">
+          <h3 class="title">Đăng ký tư vấn miễn phí ngay</h3>
+          <form action="#">
+            <div class="form-group">
+              <label for="form-name">Họ và tên:</label>
+              <input
+                type="text"
+                id="form-name"
+                class="form-input"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-job">Vị trí / Chức vụ:</label>
+              <select
+                id="form-job"
+                class="form-input"
+                name="job"
+                value=""
+                required
+              >
+                <option value="">-- Vui lòng chọn --</option>
+                <option value="CEO/ Founder/ Chủ tịch">
+                  CEO/ Founder/ Chủ tịch
+                </option>
+                <option value="Giám đốc (CFO, CTO, Nhân sự, VP)">
+                  Giám đốc (CFO, CTO, Nhân sự, VP)
+                </option>
+                <option value="Quản lý (Manager)">Quản lý (manager)</option>
+                <option value="Nhân viên (Staff)">Nhân viên (staff)</option>
+                <option value="Học sinh/ Sinh viên">Học sinh/ Sinh viên</option>
+                <option value="Vị trí khác (Other)">Vị trí khác (other)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-phone">Số điện thoại:</label>
+              <input
+                type="text"
+                id="form-phone"
+                class="form-input"
+                name="phone"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email:</label>
+              <input
+                type="email"
+                id="form-email"
+                class="form-input"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-tax">Mã số thuế:</label>
+              <input
+                type="text"
+                id="form-tax"
+                class="form-input"
+                name="tax"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-city">Tỉnh / Thành Phố:</label>
+              <input
+                type="text"
+                id="form-city"
+                class="form-input"
+                name="city"
+                required
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
 
