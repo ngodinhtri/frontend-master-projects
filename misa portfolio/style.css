@@ -1,0 +1,71 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@400;700&display=swap");
+
+/* CSS Variables */
+:root {
+  /* CSS HEX */
+  --light-color: #ffffff;
+  --primary-color: #008fec;
+  --primary-light-color: #00adff;
+  --text-color: #212121;
+  --text-light-color: #757575;
+  --font-size: 1.6rem;
+  --sans: "Oxygen", sans-serif;
+  --mono: "Oxygen Mono", monospace;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  font-size: var(--font-size);
+  background: var(--light-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+a:hover {
+  color: var(--primary-light-color);
+  text-decoration: none;
+}
+
+/* INTRO */
+#intro {
+  line-height: 1.5;
+}
+#intro .name {
+  font-family: var(--mono);
+}
+
+#intro .name span {
+  display: block;
+  font-size: 5rem;
+  font-family: var(--sans);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+#intro h2 {
+  font-size: 3rem;
+  font-weight: normal;
+}
