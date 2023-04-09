@@ -10,48 +10,90 @@
       type="image/png"
       href="https://www.misacdn.net/wp-content/uploads/2021/03/favicon.ico"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <section id="intro">
-        <p class="name">Xin chào, tôi là <span>Mỹ Linh</span></p>
-        <h2>
-          Bạn đang tìm kiếm một giải pháp <br />
-          cho các vấn đề kế toán của doanh nghiệp ?
-        </h2>
-        <p>
-          Phần mềm kế toán <a href="https://www.misa.vn/">MISA</a>, một giải
-          pháp toàn diện cho các doanh nghiệp vừa và nhỏ.
-        </p>
-      </section>
+    <!-- Scroll top -->
+    <a href="#" class="btn" id="scroll-top">
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
+    <!-- Header -->
+    <header>
+      <nav id="nav" class="container">
+        <ul id="nav__lists">
+          <li class="nav__item">
+            <a class="nav__link" href="#intro">Giới thiệu</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">Về MISA</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Tính năng</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Liên hệ</a>
+          </li>
+        </ul>
+        <h1>
+          <a href="#" class="nav__logo">Mỹ Linh MISA</a>
+        </h1>
 
+        <div id="nav__toggle" class="open">
+          <i class="bx bx-menu"></i>
+          <i class="bx bx-x"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <div class="container">
+      <!-- INTRO -->
+      <section id="intro">
+        <div class="description">
+          <p class="name">Xin chào, tôi là<span>Mỹ Linh</span></p>
+          <h2>
+            Bạn đang tìm kiếm một giải pháp cho các vấn đề kế toán của doanh
+            nghiệp ?
+          </h2>
+          <p>
+            Phần mềm kế toán <a href="https://www.misa.vn/">MISA</a>, một giải
+            pháp toàn diện cho các doanh nghiệp vừa và nhỏ.
+          </p>
+        </div>
+        <div class="image">
+          <img
+            src="https://amis.misa.vn/sites/amis/images/pages/amis-accounting/img_banner.png?ver=2"
+            alt="avatar"
+          />
+        </div>
+      </section>
+      <!-- CONTACT -->
       <section id="contact">
         <div class="info">
-          <h3 class="title">Hỗ trợ tư vấn & giải đáp</h3>
+          <h2 class="title">Hỗ trợ tư vấn & giải đáp</h2>
           <address>
+            <p>
+              Phone:
+              <a href="tel:+84392812391">0392812391</a>
+            </p>
+            <p>
+              Zalo:
+              <a href="https://zalo.me/0392812391">Mỹ Linh - MISA</a>
+            </p>
             <p>
               Email:
               <a href="mailto:mylinhstkt123@gmail.com"
                 >mylinhstkt123@gmail.com</a
               >
             </p>
-            <p>
-              Phone:
-              <a href="tel:+84392812391">0392812391</a>
-            </p>
-            <p>
-              Hoặc truy cập link bằng điện thoại, Zalo:
-              <a href="https://zaloapp.com/qr/p/1kydg4y1za5px"
-                >Mỹ Linh - MISA</a
-              >
-            </p>
-            <img class="zalo_qr" src="./images/zalo_qr.jpg" alt="Zalo QR" />
+            <p>Hoặc quét mã QR dưới đây:</p>
+            <div class="image">
+              <img class="zalo_qr" src="./images/zalo_qr.jpg" alt="Zalo QR" />
+            </div>
           </address>
         </div>
         <div class="form">
-          <h3 class="title">Đăng ký tư vấn miễn phí ngay</h3>
-          <form action="#">
+          <h2 class="title">Đăng ký tư vấn miễn phí</h2>
+          <form action="#" id="form-register">
             <div class="form-group">
               <label for="form-name">Họ và tên:</label>
               <input
@@ -78,10 +120,10 @@
                 <option value="Giám đốc (CFO, CTO, Nhân sự, VP)">
                   Giám đốc (CFO, CTO, Nhân sự, VP)
                 </option>
-                <option value="Quản lý (Manager)">Quản lý (manager)</option>
-                <option value="Nhân viên (Staff)">Nhân viên (staff)</option>
+                <option value="Quản lý (Manager)">Quản lý (Manager)</option>
+                <option value="Nhân viên (Staff)">Nhân viên (Staff)</option>
                 <option value="Học sinh/ Sinh viên">Học sinh/ Sinh viên</option>
-                <option value="Vị trí khác (Other)">Vị trí khác (other)</option>
+                <option value="Vị trí khác (Other)">Vị trí khác (Other)</option>
               </select>
             </div>
             <div class="form-group">
@@ -124,10 +166,15 @@
                 required
               />
             </div>
+            <button type="submit" class="form-btn btn">
+              Nhận tư vấn miễn phí
+            </button>
           </form>
         </div>
       </section>
     </div>
+    <!-- Scripts -->
+    <script src="./main.js"></script>
   </body>
 </html>
 
