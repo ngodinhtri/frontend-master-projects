@@ -40,4 +40,14 @@ function removeLists() {
 
 navLinks.forEach((navLink) => navLink.addEventListener("click", removeLists));
 
-//
+//  ------- scroll reveal js -----------
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "20px",
+  duration: 1000,
+  reset: true,
+});
+
+sr.reveal(`.intro__desc, .intro__image, .contact__info, .contact__form`, {
+  interval: 200,
+});
