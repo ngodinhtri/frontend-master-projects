@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mỹ Linh - Phần mềm kế toán MISA</title>
+    <meta property="og:title" content="Mỹ Linh - MISA" />
+    <meta name="description" content="Đăng ký để được hỗ trợ tư vấn 1-1" />
+    <meta
+      property="og:description"
+      content="Đăng ký để được hỗ trợ tư vấn 1 - 1 miễn phí."
+    />
+    <meta
+      property="og:image"
+      content="https://www.misacdn.net/wp-content/uploads/2020/08/thumnail.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
     <link
       rel="icon"
       type="image/png"
@@ -16,6 +28,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- Scroll top -->
     <a href="#" class="btn" id="scroll-top">
@@ -28,11 +41,11 @@
           <a href="#" class="nav__logo">Mỹ Linh MISA</a>
         </h1>
         <ul id="nav__lists">
-          <li class="nav__item">
+          <!-- <li class="nav__item">
             <a class="nav__link" href="#intro">Giới thiệu</a>
           </li>
           <li class="nav__item"><a class="nav__link" href="#">Về MISA</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Tính năng</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Tính năng</a></li> -->
           <li class="nav__item">
             <a class="nav__link" href="#contact">Liên hệ</a>
           </li>
@@ -48,7 +61,7 @@
       <!-- INTRO -->
       <section id="intro">
         <div class="intro__desc">
-          <p class="name">Xin chào, tôi là<span>Mỹ Linh</span></p>
+          <p class="name">Xin chào, tôi là<span>Mỹ Linh MISA</span></p>
           <h2>
             Bạn đang tìm kiếm một giải pháp cho các vấn đề kế toán của doanh
             nghiệp ?
@@ -59,14 +72,99 @@
           </p>
         </div>
         <div class="image intro__image">
-          <img
-            src="https://amis.misa.vn/sites/amis/images/pages/amis-accounting/img_banner.png?ver=2"
-            alt="avatar"
-          />
+          <img src="./images/img-banner.png" alt="avatar" />
         </div>
       </section>
       <!-- CONTACT -->
       <section id="contact">
+        <div class="contact__form">
+          <h2 class="title">Đăng ký tư vấn miễn phí</h2>
+          <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLScNGs2ethgTKLSq0rZE0F8wObs35fRSurFtGor_S9i5vnQu0w/formResponse"
+            id="form-register"
+          >
+            <div class="form-group">
+              <label for="form-name">Họ và tên:</label>
+              <input
+                type="text"
+                id="form-name"
+                class="form-input"
+                name="entry.842797985"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-company">Tên công ty:</label>
+              <input
+                type="text"
+                id="form-company"
+                class="form-input"
+                name="entry.292399750"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-accountant">Số lượng kế toán:</label>
+              <input
+                type="number"
+                id="form-accountant"
+                class="form-input"
+                name="entry.1965556731"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-phone">Số điện thoại:</label>
+              <input
+                type="text"
+                id="form-phone"
+                class="form-input"
+                name="entry.644478480"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email:</label>
+              <input
+                type="email"
+                id="form-email"
+                class="form-input"
+                name="entry.1087406936"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-tax">Mã số thuế:</label>
+              <input
+                type="text"
+                id="form-tax"
+                class="form-input"
+                name="entry.737412524"
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-city">Tỉnh / Thành Phố:</label>
+              <input
+                type="text"
+                id="form-city"
+                class="form-input"
+                name="entry.2136203188"
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-need">Nhu cầu quản lý:</label>
+              <textarea
+                id="form-need"
+                class="form-input"
+                name="entry.1949470127"
+              ></textarea>
+            </div>
+            <button type="submit" class="form-btn btn">
+              Nhận tư vấn miễn phí
+            </button>
+          </form>
+        </div>
+
         <div class="contact__info">
           <h2 class="title">Hỗ trợ tư vấn & giải đáp</h2>
           <address>
@@ -90,88 +188,6 @@
             </div>
           </address>
         </div>
-        <div class="contact__form">
-          <h2 class="title">Đăng ký tư vấn miễn phí</h2>
-          <form
-            action="https://docs.google.com/forms/d/e/1FAIpQLSewGOK0tldwmlECwnB5YgdfP8hOXTNYkRv-OgQVgWoHf42Cmg/formResponse"
-            id="form-register"
-          >
-            <div class="form-group">
-              <label for="form-name">Họ và tên:</label>
-              <input
-                type="text"
-                id="form-name"
-                class="form-input"
-                name="entry.2005620554"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="form-job">Vị trí / Chức vụ:</label>
-              <select
-                id="form-job"
-                class="form-input"
-                name="entry.1422810856"
-                required
-              >
-                <option value="">-- Vui lòng chọn --</option>
-                <option value="CEO/ Founder/ Chủ tịch">
-                  CEO/ Founder/ Chủ tịch
-                </option>
-                <option value="Giám đốc (CFO, CTO, Nhân sự, VP)">
-                  Giám đốc (CFO, CTO, Nhân sự, VP)
-                </option>
-                <option value="Quản lý (Manager)">Quản lý (Manager)</option>
-                <option value="Nhân viên (Staff)">
-                  Nhân viê<!--  -->n (Staff)
-                </option>
-                <option value="Học sinh/ Sinh viên">Học sinh/ Sinh viên</option>
-                <option value="Vị trí khác (Other)">Vị trí khác (Other)</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="form-phone">Số điện thoại:</label>
-              <input
-                type="text"
-                id="form-phone"
-                class="form-input"
-                name="entry.1166974658"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="form-email">Email:</label>
-              <input
-                type="email"
-                id="form-email"
-                class="form-input"
-                name="entry.1045781291"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="form-tax">Mã số thuế:</label>
-              <input
-                type="text"
-                id="form-tax"
-                class="form-input"
-                name="entry.839337160"
-              />
-            </div>
-            <div class="form-group">
-              <label for="form-city">Tỉnh / Thành Phố:</label>
-              <input
-                type="text"
-                id="form-city"
-                class="form-input"
-                name="entry.1564100736"
-              />
-            </div>
-            <button type="submit" class="form-btn btn">
-              Nhận tư vấn miễn phí
-            </button>
-          </form>
-        </div>
       </section>
     </div>
     <!-- Scripts -->
@@ -179,18 +195,3 @@
     <script src="./main.js"></script>
   </body>
 </html>
-
-<!-- Phần mềm kế toán MISA là một phần mềm quản lý tài chính và kế toán chuyên nghiệp, được phát triển bởi công ty MISA - một trong những công ty hàng đầu về công nghệ thông tin tại Việt Nam. Phần mềm kế toán MISA có nhiều tính năng ưu việt như:
-
-- Hỗ trợ đầy đủ các quy trình kế toán theo các chuẩn mực và quy định hiện hành của Nhà nước, như hóa đơn điện tử, báo cáo thuế, báo cáo tài chính, sổ sách kế toán...
-- Tích hợp với các hệ thống ngân hàng, cổng thanh toán, cơ quan thuế... để thực hiện các giao dịch nhanh chóng và an toàn.
-- Tự động hóa các công việc lặp đi lặp lại, giảm thiểu sai sót và tiết kiệm thời gian cho người dùng.
-- Có giao diện thân thiện và dễ sử dụng, có hướng dẫn chi tiết và hỗ trợ kỹ thuật 24/7.
-- Có nhiều phiên bản phù hợp với từng loại hình doanh nghiệp và ngành nghề khác nhau, như MISA SME.NET cho doanh nghiệp vừa và nhỏ, MISA AMIS cho doanh nghiệp dịch vụ, MISA ME cho doanh nghiệp sản xuất... -->
-
-<!-- Phần mềm kế toán MISA đã được sử dụng bởi hàng ngàn doanh nghiệp trên cả
-    nước và nhận được nhiều phản hồi tích cực từ khách hàng. Nếu bạn đang tìm
-    kiếm một phần mềm kế toán chất lượng cao và giá cả hợp lý, bạn không nên bỏ
-    qua sản phẩm của MISA. Bạn có thể truy cập vào trang web
-    https://www.misa.com.vn/ để biết thêm thông tin chi tiết và đăng ký dùng thử
-    miễn phí. -->

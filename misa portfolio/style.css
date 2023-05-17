@@ -213,6 +213,10 @@ header a {
   margin: 20px 0;
 }
 
+#contact .contact__info {
+  margin-top: 50px;
+}
+
 #contact .contact__info address {
   font-style: normal;
 }
@@ -253,6 +257,11 @@ header a {
 
 #form-register .form-group .form-input:focus {
   border-color: var(--primary-light-color);
+}
+
+#form-register .form-group textarea.form-input {
+  height: 150px;
+  padding: 5px;
 }
 
 #form-register .form-btn {
@@ -301,6 +310,9 @@ header a {
     display: flex;
     gap: 20px;
   }
+  #contact {
+    flex-direction: row;
+  }
 
   #intro {
     align-items: center;
@@ -312,10 +324,11 @@ header a {
   }
 
   #contact .contact__info {
+    margin-top: 0;
     text-align: center;
   }
 
   #contact .contact__info .image img {
     width: 50%;
   }
-} ;
+}
