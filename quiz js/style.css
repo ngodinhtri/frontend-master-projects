@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+
+:root {
+  --peach: #f2d7d9;
+  --light-purple: #d3cedf;
+  --light-blue: #9cb4cc;
+  --dark-blue: #748da6;
+  --white: #fdfdfd;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Fira Mono", monospace;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  /* background-image: url(./img/mmmotif.svg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  font-size: 1.6rem;
+  color: var(--dark-blue);
+}
+
+.blur {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  z-index: -999;
+}
+/* PROGRESS BAR */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: var(--peach);
+}
+.progress-line {
+  width: 80%;
+  height: 100%;
+  background-color: var(--light-purple);
+}
+
+header {
+  text-align: center;
+  border-bottom: 3px solid var(--dark-blue);
+}
+header h1 {
+  font-size: 5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 2.3rem;
+}
+.content .question {
+  height: 180px;
+  text-align: center;
+}
+.content .answers .btn:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  background-color: var(--white);
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.btn:hover {
+  color: var(--white);
+  background-color: var(--light-blue);
+}
