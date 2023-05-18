@@ -1,4 +1,5 @@
-# ✨ Frontendmaster projects ✨ 
+# ✨ Frontendmaster projects ✨
+
 ## 1. Calculator
 
 <details>
@@ -45,5 +46,21 @@
   <br>
   
   ![Wordle Game](preview/wordle_game_preview.jpeg)
+  
+</details>
+
+## 3. MISA personal portfolio
+
+<details>
+  <summary> <ins>Description:</ins> </summary>
+  <br>
+  <p>The website has a simple and elegant design, with a light theme and a responsive layout. The website also provides links to her social media profiles, and contact information. The website is hosted on Firebase and has a registration form to receive more information, it's connected with Google form.</p>
+</details>
+
+<details>
+  <summary> <ins>Preview:</ins> </summary>
+  <br>
+  
+  ![MISA portfolio](preview/mylinh-misa.web.app.jpeg)
   
 </details>
