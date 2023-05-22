@@ -66,11 +66,24 @@ header h1 {
   font-size: 2.3rem;
 }
 .content .question {
+  margin: 20px 0;
   height: 180px;
   text-align: center;
 }
 .content .answers .btn:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+#explanation {
+  font-size: 1.6rem;
+  text-align: justify;
 }
 
 .btn {
@@ -89,7 +102,12 @@ header h1 {
   transition: all ease-in-out 0.3s;
 }
 
-.btn:hover {
+.btn[disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.btn:hover:not([disabled]) {
   color: var(--white);
   background-color: var(--light-blue);
 }
