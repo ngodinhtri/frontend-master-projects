@@ -6,6 +6,7 @@
   --light-blue: #9cb4cc;
   --dark-blue: #748da6;
   --white: #fdfdfd;
+  --green: #c7e9b0;
 }
 
 * {
@@ -74,16 +75,14 @@ header h1 {
   margin-bottom: 10px;
 }
 
-.hidden {
+.explanation {
   display: none;
-}
-.show {
-  display: block;
-}
-
-#explanation {
   font-size: 1.6rem;
   text-align: justify;
+}
+
+.show {
+  display: block;
 }
 
 .btn {
@@ -110,4 +109,11 @@ header h1 {
 .btn:hover:not([disabled]) {
   color: var(--white);
   background-color: var(--light-blue);
+}
+
+.true {
+  background-color: var(--green);
+}
+.false {
+  background-color: var(--peach);
 }
